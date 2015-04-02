@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="deslimstemens.controller.CompetitionController">
+   <children>
+      <AnchorPane AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ToolBar prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                  <Label text="%gebruikers">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane HBox.hgrow="ALWAYS" />
+                  <Button fx:id="btnCancelSearch" mnemonicParsing="false" onAction="#btnCancelSearch_onAction" text="×" visible="false" />
+                  <TextField fx:id="tfSearch" onKeyReleased="#tfSearch_onKeyReleased" promptText="%tfSearch_promt" />
+              </items>
+            </ToolBar>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblvUsers" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+        <columns>
+          <TableColumn fx:id="tblvcUsername" editable="false" prefWidth="75.0" text="%tcNaam_header" />
+          <TableColumn fx:id="tblvcScore" editable="false" prefWidth="75.0" text="%tcScore_header" />
+            <TableColumn fx:id="tblvcRequest" editable="false" prefWidth="75.0" sortable="false" text="%tcUitnodigen_header" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
