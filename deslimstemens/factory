@@ -1,0 +1,3 @@
+deslimstemens.data.DataProvider=deslimstemens.data.MockDB
+deslimstemens.data.Logger=deslimstemens.data.MockLogger
+deslimstemens.data.SettingsProvider=deslimstemens.data.SimpleSettings

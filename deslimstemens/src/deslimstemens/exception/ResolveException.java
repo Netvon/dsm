@@ -10,6 +10,11 @@ public class ResolveException extends Exception
 		this.requestedClass = requestedClass;
 	}
 	
+	public ResolveException()
+	{
+		
+	}
+	
 	public Class<?> getRequestedClass()
 	{
 		return requestedClass;

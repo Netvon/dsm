@@ -1,4 +1,4 @@
-package deslimstemens.util;
+package deslimstemens.util.resolve;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -9,16 +9,18 @@ import deslimstemens.exception.ResolveException;
 
 /**
  * A class used to resolve classes at runtime.
- * This class uses a {@code SimpleSettings} object to save the resolve table to the disk.
+ * This class uses a {@link SimpleSettings} object to save the resolve table to the disk.
  * 
  * <p>
- * You can use the {@code resolve()} method to resolve a class:
- * <blockquote><pre>
- * //the location of the resolve table will be the root folder in a file called "resolvetable"
+ * You can use the {@link #resolve(Class, Object...) resolve} method to resolve a class.
+ * In this example the Resolve Table is located in the resolvetable file
+ * <pre>
+ * {@code
  * Resolver resolver = new Resolver("resolvetable");
  * DataProvider data = resolver.Resolve(DataProvider.class);
- * </pre></blockquote>
- * Resolving a Class can result in a {@code ResovleException} if the Class is not
+ * }
+ * </pre>
+ * Resolving a Class can result in a {@link ResovleException} if the Class is not
  * in the resolve table.
  * 
  * @author Tom van Nimwegen

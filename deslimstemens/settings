@@ -1,0 +1,4 @@
+startView=GameView
+rpLocale=nl_NL
+windowTitle=De Slimste Mens
+rpLocation=deslimstemens.view.i18n.bundle

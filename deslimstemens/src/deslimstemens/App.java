@@ -11,7 +11,7 @@ import deslimstemens.exception.ResolveException;
 import deslimstemens.exception.ShowViewException;
 import deslimstemens.util.Async;
 import deslimstemens.util.DefaultSettings;
-import deslimstemens.util.Resolver;
+import deslimstemens.util.resolve.Resolver;
 import deslimstemens.view.ResourceProvider;
 import deslimstemens.view.ViewHelper;
 
